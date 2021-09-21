@@ -29,7 +29,7 @@ Partial Class frmLogin
         Me.lblLogin = New System.Windows.Forms.Label()
         Me.btnEntrar = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblCadastro = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'txtUsuario
@@ -102,16 +102,16 @@ Partial Class frmLogin
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Não possui login ainda?"
         '
-        'Label2
+        'lblCadastro
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.Label2.Location = New System.Drawing.Point(151, 447)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(113, 24)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Cadastre-se"
+        Me.lblCadastro.AutoSize = True
+        Me.lblCadastro.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point)
+        Me.lblCadastro.ForeColor = System.Drawing.Color.RoyalBlue
+        Me.lblCadastro.Location = New System.Drawing.Point(151, 447)
+        Me.lblCadastro.Name = "lblCadastro"
+        Me.lblCadastro.Size = New System.Drawing.Size(113, 24)
+        Me.lblCadastro.TabIndex = 1
+        Me.lblCadastro.Text = "Cadastre-se"
         '
         'frmLogin
         '
@@ -121,14 +121,14 @@ Partial Class frmLogin
         Me.ClientSize = New System.Drawing.Size(428, 505)
         Me.Controls.Add(Me.btnEntrar)
         Me.Controls.Add(Me.lblLogin)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.lblCadastro)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lblSenha)
         Me.Controls.Add(Me.lblUsuario)
         Me.Controls.Add(Me.txtSenha)
         Me.Controls.Add(Me.txtUsuario)
         Me.Name = "frmLogin"
-        Me.Text = "Form1"
+        Me.Text = "Login"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -141,5 +141,5 @@ Partial Class frmLogin
     Friend WithEvents lblLogin As Label
     Friend WithEvents btnEntrar As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
+    Friend WithEvents lblCadastro As Label
 End Class
