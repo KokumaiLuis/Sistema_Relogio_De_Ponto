@@ -34,7 +34,7 @@ Partial Class frmLogin
         '
         'txtUsuario
         '
-        Me.txtUsuario.Location = New System.Drawing.Point(71, 167)
+        Me.txtUsuario.Location = New System.Drawing.Point(75, 167)
         Me.txtUsuario.Name = "txtUsuario"
         Me.txtUsuario.Size = New System.Drawing.Size(281, 31)
         Me.txtUsuario.TabIndex = 0
@@ -44,7 +44,7 @@ Partial Class frmLogin
         Me.lblUsuario.AutoSize = True
         Me.lblUsuario.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.lblUsuario.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.lblUsuario.Location = New System.Drawing.Point(70, 137)
+        Me.lblUsuario.Location = New System.Drawing.Point(74, 129)
         Me.lblUsuario.Name = "lblUsuario"
         Me.lblUsuario.Size = New System.Drawing.Size(72, 24)
         Me.lblUsuario.TabIndex = 1
@@ -52,7 +52,7 @@ Partial Class frmLogin
         '
         'txtSenha
         '
-        Me.txtSenha.Location = New System.Drawing.Point(71, 256)
+        Me.txtSenha.Location = New System.Drawing.Point(75, 256)
         Me.txtSenha.Name = "txtSenha"
         Me.txtSenha.Size = New System.Drawing.Size(281, 31)
         Me.txtSenha.TabIndex = 0
@@ -62,7 +62,7 @@ Partial Class frmLogin
         Me.lblSenha.AutoSize = True
         Me.lblSenha.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.lblSenha.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.lblSenha.Location = New System.Drawing.Point(70, 226)
+        Me.lblSenha.Location = New System.Drawing.Point(74, 218)
         Me.lblSenha.Name = "lblSenha"
         Me.lblSenha.Size = New System.Drawing.Size(59, 24)
         Me.lblSenha.TabIndex = 1
@@ -73,7 +73,7 @@ Partial Class frmLogin
         Me.lblLogin.AutoSize = True
         Me.lblLogin.Font = New System.Drawing.Font("Comic Sans MS", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.lblLogin.ForeColor = System.Drawing.Color.SteelBlue
-        Me.lblLogin.Location = New System.Drawing.Point(151, 43)
+        Me.lblLogin.Location = New System.Drawing.Point(155, 43)
         Me.lblLogin.Name = "lblLogin"
         Me.lblLogin.Size = New System.Drawing.Size(120, 55)
         Me.lblLogin.TabIndex = 2
@@ -84,7 +84,7 @@ Partial Class frmLogin
         Me.btnEntrar.BackColor = System.Drawing.Color.SteelBlue
         Me.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEntrar.ForeColor = System.Drawing.Color.White
-        Me.btnEntrar.Location = New System.Drawing.Point(152, 326)
+        Me.btnEntrar.Location = New System.Drawing.Point(156, 326)
         Me.btnEntrar.Name = "btnEntrar"
         Me.btnEntrar.Size = New System.Drawing.Size(112, 34)
         Me.btnEntrar.TabIndex = 3
@@ -96,7 +96,7 @@ Partial Class frmLogin
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label1.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.Label1.Location = New System.Drawing.Point(110, 422)
+        Me.Label1.Location = New System.Drawing.Point(114, 422)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(196, 24)
         Me.Label1.TabIndex = 1
@@ -107,7 +107,7 @@ Partial Class frmLogin
         Me.lblCadastro.AutoSize = True
         Me.lblCadastro.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point)
         Me.lblCadastro.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.lblCadastro.Location = New System.Drawing.Point(151, 447)
+        Me.lblCadastro.Location = New System.Drawing.Point(155, 447)
         Me.lblCadastro.Name = "lblCadastro"
         Me.lblCadastro.Size = New System.Drawing.Size(113, 24)
         Me.lblCadastro.TabIndex = 1
