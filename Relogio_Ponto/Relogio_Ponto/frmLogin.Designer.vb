@@ -44,7 +44,7 @@ Partial Class frmLogin
         Me.lblUsuario.AutoSize = True
         Me.lblUsuario.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.lblUsuario.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.lblUsuario.Location = New System.Drawing.Point(70, 139)
+        Me.lblUsuario.Location = New System.Drawing.Point(70, 137)
         Me.lblUsuario.Name = "lblUsuario"
         Me.lblUsuario.Size = New System.Drawing.Size(72, 24)
         Me.lblUsuario.TabIndex = 1
@@ -62,7 +62,7 @@ Partial Class frmLogin
         Me.lblSenha.AutoSize = True
         Me.lblSenha.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.lblSenha.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.lblSenha.Location = New System.Drawing.Point(70, 228)
+        Me.lblSenha.Location = New System.Drawing.Point(70, 226)
         Me.lblSenha.Name = "lblSenha"
         Me.lblSenha.Size = New System.Drawing.Size(59, 24)
         Me.lblSenha.TabIndex = 1

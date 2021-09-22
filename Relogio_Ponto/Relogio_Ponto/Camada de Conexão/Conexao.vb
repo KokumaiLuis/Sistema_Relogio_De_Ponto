@@ -1,13 +1,11 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class Conexao
+    'String de Conexão com o Database, deve ser alterado de acordo com as configurações do servidor SQL
+    Const ConexaoDB As String = "server=localhost\SQLEXPRESS;database=DevDB;Integrated Security = True"
 
-    Private Arquivo As New Arquivo
-
-    Const ConexaoDB As String = "server=localhost\SQLEXPRESS;database=GRAFADM;Integrated Security = True"
-
+    'Verifica a conexão com o servidor
     Public Sub StrConexao()
-        Dim StringConexao As String = Arquivo.LerLinha(Application.StartupPath & "\StringCon.ini", 0)
         Try
             ObjCon = New SqlConnection(ConexaoDB)
             ObjCon.Open()
@@ -19,6 +17,7 @@ Public Class Conexao
         End Try
     End Sub
 
+    'Abre a conexão com o servidor
     Public Sub Open()
         Try
             If ObjCon.State = 1 Then ObjCon.Close()
@@ -28,6 +27,7 @@ Public Class Conexao
         End Try
     End Sub
 
+    'Fecha a conexão com o servidor
     Public Sub Close()
         Try
             If ObjCon.State = 1 Then ObjCon.Close()
