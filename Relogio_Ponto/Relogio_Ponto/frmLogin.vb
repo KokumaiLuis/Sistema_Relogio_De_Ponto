@@ -6,5 +6,7 @@
         Con.StrConexao()
     End Sub
 
-
+    Private Sub lblCadastro_Click(sender As Object, e As EventArgs) Handles lblCadastro.Click
+        frmCadastro.Show()
+    End Sub
 End Class
