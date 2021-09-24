@@ -10,8 +10,15 @@
     Private Sub btnGravar_Click(sender As Object, e As EventArgs) Handles btnGravar.Click
         'Verifica se todos os campos foram preenchidos
         If ValidaCampos() Then
-            'Grava cadastro no banco de dados
-            GravaCadastro(txtUsuario.Text, txtSenha.Text)
+            'Verifica se o nome digitado já existe
+            log.SelectLista(txtUsuario.Text)
+            If log.Lusuario.Count > 0 Then
+                MessageBox.Show("O nome de usuário digitado já existe, favor inserir outro.", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                txtUsuario.Focus()
+            Else
+                'Grava cadastro no banco de dados
+                GravaCadastro(txtUsuario.Text, txtSenha.Text)
+            End If
         Else
             'Retorna uma mensagem para o usuário
             MessageBox.Show("Preencha todos os campos obrigatórios e tente novamente", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Warning)

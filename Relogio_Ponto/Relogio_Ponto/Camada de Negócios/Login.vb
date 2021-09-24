@@ -4,6 +4,9 @@
     Private Chave As String = "SEN"
     Public exito As Boolean
 
+    Public Lusuario As List(Of String)
+    Public Lsenha As List(Of String)
+
     Public Sub Gravar(ByVal usuario As String,
                       ByVal senha As String)
         Dim VstrSQL As String = "INSERT INTO [dbo].[TB_LOGIN]
@@ -19,6 +22,22 @@
 
         Me.exito = Log.exito
     End Sub
+
+    Public Sub SelectLista(ByVal usuario As String)
+        Dim VstrSQL As String = "SELECT * FROM TB_LOGIN WHERE USUARIO_LOG = '" & usuario & "'"
+
+        Me.Lusuario = New List(Of String)
+        Me.Lsenha = New List(Of String)
+        Me.exito = False
+
+        Log.SelectValues(VstrSQL)
+
+        Me.Lusuario = Log.Lusuario
+        Me.Lsenha = Log.LSenha
+        Me.exito = Log.exito
+
+    End Sub
+
 
     Private Function Encrypt(ByVal text As String) As String
         Dim Key As List(Of String) = New List(Of String)
