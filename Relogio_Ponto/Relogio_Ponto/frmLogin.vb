@@ -28,7 +28,6 @@
                 If log.Lsenha(0) = txtSenha.Text Then
                     MessageBox.Show(log.Lsenha(0))
                 Else
-                    MessageBox.Show(log.Lsenha(0))
                     MessageBox.Show("Senha incorreta!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                     txtSenha.Focus()
                 End If
