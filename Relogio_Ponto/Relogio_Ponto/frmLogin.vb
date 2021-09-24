@@ -8,5 +8,6 @@
 
     Private Sub lblCadastro_Click(sender As Object, e As EventArgs) Handles lblCadastro.Click
         frmCadastro.Show()
+        Me.Hide()
     End Sub
 End Class

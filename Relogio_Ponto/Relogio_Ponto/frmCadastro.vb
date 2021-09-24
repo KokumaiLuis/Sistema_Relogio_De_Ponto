@@ -33,8 +33,14 @@
 
         If log.exito Then
             MessageBox.Show("Usuário gravado com sucesso.", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            frmLogin.Show()
+            Me.Hide()
         End If
 
     End Sub
 
+    Private Sub btnCancelar_Click(sender As Object, e As EventArgs) Handles btnCancelar.Click
+        frmLogin.Show()
+        Me.Hide()
+    End Sub
 End Class
