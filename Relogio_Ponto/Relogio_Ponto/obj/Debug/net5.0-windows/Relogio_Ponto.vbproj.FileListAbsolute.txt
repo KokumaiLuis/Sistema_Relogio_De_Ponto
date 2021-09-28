@@ -24,3 +24,5 @@ C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Pont
 C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Ponto\obj\Debug\net5.0-windows\Relogio_Ponto.pdb
 C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Ponto\obj\Debug\net5.0-windows\Relogio_Ponto.genruntimeconfig.cache
 C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Ponto\obj\Debug\net5.0-windows\Relogio_Ponto.frmCadastro.resources
+C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Ponto\obj\Debug\net5.0-windows\Relogio_Ponto.frmRelogioPonto.resources
+C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Ponto\obj\Debug\net5.0-windows\Relogio_Ponto.Resources.resources

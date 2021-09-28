@@ -7,5 +7,8 @@
     <Compile Update="frmLogin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="frmRelogioPonto.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

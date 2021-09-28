@@ -26,7 +26,8 @@
             If log.Lusuario.Count > 0 Then
                 'Verifica a veracidade da senha
                 If log.Lsenha(0) = txtSenha.Text Then
-                    MessageBox.Show(log.Lsenha(0))
+                    frmRelogioPonto.Show()
+                    Me.Hide()
                 Else
                     MessageBox.Show("Senha incorreta!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                     txtSenha.Focus()
@@ -48,5 +49,4 @@
             Return False
         End If
     End Function
-
 End Class
