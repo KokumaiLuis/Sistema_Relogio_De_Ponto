@@ -4,7 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
     <RootNamespace>Relogio_Ponto</RootNamespace>
-    <StartupObject>Relogio_Ponto.frmLogin</StartupObject>
+    <StartupObject>Relogio_Ponto.frmRelogioPonto</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
     <OptionCompare>Binary</OptionCompare>

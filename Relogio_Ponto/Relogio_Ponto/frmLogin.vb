@@ -27,6 +27,7 @@
                 'Verifica a veracidade da senha
                 If log.Lsenha(0) = txtSenha.Text Then
                     frmRelogioPonto.Show()
+                    LimpaCampos()
                     Me.Hide()
                 Else
                     MessageBox.Show("Senha incorreta!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning)
@@ -49,4 +50,9 @@
             Return False
         End If
     End Function
+
+    Private Sub LimpaCampos()
+        txtUsuario.Clear()
+        txtSenha.Clear()
+    End Sub
 End Class

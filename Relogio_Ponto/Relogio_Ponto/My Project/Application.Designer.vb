@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.Relogio_Ponto.frmLogin
+            Me.MainForm = Global.Relogio_Ponto.frmRelogioPonto
         End Sub
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
