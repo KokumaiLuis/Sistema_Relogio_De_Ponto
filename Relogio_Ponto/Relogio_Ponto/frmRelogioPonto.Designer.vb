@@ -22,7 +22,9 @@ Partial Class frmRelogioPonto
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmRelogioPonto))
         Me.GridHorario = New System.Windows.Forms.DataGridView()
         Me.IdLog = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -32,6 +34,7 @@ Partial Class frmRelogioPonto
         Me.InicAlm = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.FimAlm = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Saida = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Modo = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.lblRelogioPonto = New System.Windows.Forms.Label()
         Me.lblHorarioAtual = New System.Windows.Forms.Label()
         Me.lblHora = New System.Windows.Forms.Label()
@@ -48,6 +51,7 @@ Partial Class frmRelogioPonto
         Me.lblLogout = New System.Windows.Forms.Label()
         Me.rbtnHomeOffice = New System.Windows.Forms.RadioButton()
         Me.rbtnPresencial = New System.Windows.Forms.RadioButton()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.GridHorario, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnEntrada, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnInicAlm, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -62,16 +66,24 @@ Partial Class frmRelogioPonto
         Me.GridHorario.AllowUserToDeleteRows = False
         Me.GridHorario.AllowUserToResizeColumns = False
         Me.GridHorario.AllowUserToResizeRows = False
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.SteelBlue
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.GridHorario.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.SteelBlue
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SteelBlue
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.GridHorario.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.GridHorario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.GridHorario.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdLog, Me.NomLog, Me.Data, Me.Entrada, Me.InicAlm, Me.FimAlm, Me.Saida})
+        Me.GridHorario.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdLog, Me.NomLog, Me.Data, Me.Entrada, Me.InicAlm, Me.FimAlm, Me.Saida, Me.Modo})
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.InactiveCaption
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Desktop
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.CornflowerBlue
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.GridHorario.DefaultCellStyle = DataGridViewCellStyle2
         Me.GridHorario.EnableHeadersVisualStyles = False
         Me.GridHorario.Location = New System.Drawing.Point(30, 529)
         Me.GridHorario.Name = "GridHorario"
@@ -93,21 +105,21 @@ Partial Class frmRelogioPonto
         Me.NomLog.HeaderText = "Nome"
         Me.NomLog.MinimumWidth = 8
         Me.NomLog.Name = "NomLog"
-        Me.NomLog.Width = 120
+        Me.NomLog.Width = 90
         '
         'Data
         '
         Me.Data.HeaderText = "Data"
         Me.Data.MinimumWidth = 8
         Me.Data.Name = "Data"
-        Me.Data.Width = 110
+        Me.Data.Width = 80
         '
         'Entrada
         '
         Me.Entrada.HeaderText = "Entrada"
         Me.Entrada.MinimumWidth = 8
         Me.Entrada.Name = "Entrada"
-        Me.Entrada.Width = 120
+        Me.Entrada.Width = 110
         '
         'InicAlm
         '
@@ -128,14 +140,21 @@ Partial Class frmRelogioPonto
         Me.Saida.HeaderText = "Saída"
         Me.Saida.MinimumWidth = 8
         Me.Saida.Name = "Saida"
-        Me.Saida.Width = 120
+        Me.Saida.Width = 110
+        '
+        'Modo
+        '
+        Me.Modo.HeaderText = "Modo"
+        Me.Modo.MinimumWidth = 8
+        Me.Modo.Name = "Modo"
+        Me.Modo.Width = 150
         '
         'lblRelogioPonto
         '
         Me.lblRelogioPonto.AutoSize = True
         Me.lblRelogioPonto.Font = New System.Drawing.Font("Comic Sans MS", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.lblRelogioPonto.ForeColor = System.Drawing.Color.SteelBlue
-        Me.lblRelogioPonto.Location = New System.Drawing.Point(466, 33)
+        Me.lblRelogioPonto.Location = New System.Drawing.Point(461, 33)
         Me.lblRelogioPonto.Name = "lblRelogioPonto"
         Me.lblRelogioPonto.Size = New System.Drawing.Size(340, 55)
         Me.lblRelogioPonto.TabIndex = 3
@@ -146,7 +165,7 @@ Partial Class frmRelogioPonto
         Me.lblHorarioAtual.AutoSize = True
         Me.lblHorarioAtual.Font = New System.Drawing.Font("Comic Sans MS", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.lblHorarioAtual.ForeColor = System.Drawing.Color.SteelBlue
-        Me.lblHorarioAtual.Location = New System.Drawing.Point(518, 102)
+        Me.lblHorarioAtual.Location = New System.Drawing.Point(513, 102)
         Me.lblHorarioAtual.Name = "lblHorarioAtual"
         Me.lblHorarioAtual.Size = New System.Drawing.Size(232, 45)
         Me.lblHorarioAtual.TabIndex = 4
@@ -157,7 +176,7 @@ Partial Class frmRelogioPonto
         Me.lblHora.AutoSize = True
         Me.lblHora.Font = New System.Drawing.Font("Comic Sans MS", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.lblHora.ForeColor = System.Drawing.Color.LightSlateGray
-        Me.lblHora.Location = New System.Drawing.Point(558, 189)
+        Me.lblHora.Location = New System.Drawing.Point(553, 189)
         Me.lblHora.Name = "lblHora"
         Me.lblHora.Size = New System.Drawing.Size(143, 39)
         Me.lblHora.TabIndex = 4
@@ -168,7 +187,7 @@ Partial Class frmRelogioPonto
         Me.lblData.AutoSize = True
         Me.lblData.Font = New System.Drawing.Font("Comic Sans MS", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.lblData.ForeColor = System.Drawing.Color.LightSlateGray
-        Me.lblData.Location = New System.Drawing.Point(540, 147)
+        Me.lblData.Location = New System.Drawing.Point(535, 147)
         Me.lblData.Name = "lblData"
         Me.lblData.Size = New System.Drawing.Size(181, 39)
         Me.lblData.TabIndex = 4
@@ -284,7 +303,7 @@ Partial Class frmRelogioPonto
         Me.rbtnHomeOffice.AutoSize = True
         Me.rbtnHomeOffice.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.rbtnHomeOffice.ForeColor = System.Drawing.Color.SteelBlue
-        Me.rbtnHomeOffice.Location = New System.Drawing.Point(499, 264)
+        Me.rbtnHomeOffice.Location = New System.Drawing.Point(494, 264)
         Me.rbtnHomeOffice.Name = "rbtnHomeOffice"
         Me.rbtnHomeOffice.Size = New System.Drawing.Size(142, 28)
         Me.rbtnHomeOffice.TabIndex = 7
@@ -297,13 +316,18 @@ Partial Class frmRelogioPonto
         Me.rbtnPresencial.AutoSize = True
         Me.rbtnPresencial.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.rbtnPresencial.ForeColor = System.Drawing.Color.SteelBlue
-        Me.rbtnPresencial.Location = New System.Drawing.Point(652, 264)
+        Me.rbtnPresencial.Location = New System.Drawing.Point(647, 264)
         Me.rbtnPresencial.Name = "rbtnPresencial"
         Me.rbtnPresencial.Size = New System.Drawing.Size(118, 28)
         Me.rbtnPresencial.TabIndex = 7
         Me.rbtnPresencial.TabStop = True
         Me.rbtnPresencial.Text = "Presencial"
         Me.rbtnPresencial.UseVisualStyleBackColor = True
+        '
+        'Timer1
+        '
+        Me.Timer1.Enabled = True
+        Me.Timer1.Interval = 1000
         '
         'frmRelogioPonto
         '
@@ -355,6 +379,11 @@ Partial Class frmRelogioPonto
     Friend WithEvents btnFimAlm As PictureBox
     Friend WithEvents lblSaida As Label
     Friend WithEvents btnSaida As PictureBox
+    Friend WithEvents btnLogout As PictureBox
+    Friend WithEvents lblLogout As Label
+    Friend WithEvents rbtnHomeOffice As RadioButton
+    Friend WithEvents rbtnPresencial As RadioButton
+    Friend WithEvents Timer1 As Timer
     Friend WithEvents IdLog As DataGridViewTextBoxColumn
     Friend WithEvents NomLog As DataGridViewTextBoxColumn
     Friend WithEvents Data As DataGridViewTextBoxColumn
@@ -362,8 +391,5 @@ Partial Class frmRelogioPonto
     Friend WithEvents InicAlm As DataGridViewTextBoxColumn
     Friend WithEvents FimAlm As DataGridViewTextBoxColumn
     Friend WithEvents Saida As DataGridViewTextBoxColumn
-    Friend WithEvents btnLogout As PictureBox
-    Friend WithEvents lblLogout As Label
-    Friend WithEvents rbtnHomeOffice As RadioButton
-    Friend WithEvents rbtnPresencial As RadioButton
+    Friend WithEvents Modo As DataGridViewTextBoxColumn
 End Class

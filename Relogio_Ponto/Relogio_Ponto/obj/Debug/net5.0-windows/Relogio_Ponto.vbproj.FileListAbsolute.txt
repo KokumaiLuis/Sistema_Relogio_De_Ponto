@@ -1,4 +1,3 @@
-C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Ponto\obj\Debug\net5.0-windows\Relogio_Ponto.vbprojAssemblyReference.cache
 C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Ponto\obj\Debug\net5.0-windows\Relogio_Ponto.frmLogin.resources
 C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Ponto\obj\Debug\net5.0-windows\Relogio_Ponto.vbproj.GenerateResource.cache
 C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Ponto\obj\Debug\net5.0-windows\Relogio_Ponto.GeneratedMSBuildEditorConfig.editorconfig
@@ -18,7 +17,6 @@ C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Pont
 C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Ponto\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
 C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Ponto\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Ponto\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Ponto\obj\Debug\net5.0-windows\Relogio_Ponto.vbproj.CopyComplete
 C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Ponto\obj\Debug\net5.0-windows\Relogio_Ponto.dll
 C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Ponto\obj\Debug\net5.0-windows\ref\Relogio_Ponto.dll
 C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Ponto\obj\Debug\net5.0-windows\Relogio_Ponto.pdb
@@ -26,3 +24,4 @@ C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Pont
 C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Ponto\obj\Debug\net5.0-windows\Relogio_Ponto.frmCadastro.resources
 C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Ponto\obj\Debug\net5.0-windows\Relogio_Ponto.frmRelogioPonto.resources
 C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Ponto\obj\Debug\net5.0-windows\Relogio_Ponto.Resources.resources
+C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Ponto\obj\Debug\net5.0-windows\Relogio_Ponto.vbproj.AssemblyReference.cache

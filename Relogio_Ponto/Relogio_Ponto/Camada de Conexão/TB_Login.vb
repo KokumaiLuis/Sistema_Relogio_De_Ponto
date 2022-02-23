@@ -9,6 +9,7 @@ Public Class TB_Login
 
     Public Lusuario As List(Of String)
     Public LSenha As List(Of String)
+    Public LId_Log As List(Of Integer)
 
     'Sub de Insert de dados na tabela
     Public Sub Insert(ByVal VstrSQL As String)
@@ -27,18 +28,22 @@ Public Class TB_Login
 
     'Sub de Select de dados na tabela
     Public Sub SelectValues(ByVal VstrSQL As String)
+        Me.LId_Log = New List(Of Integer)
         Me.Lusuario = New List(Of String)
         Me.LSenha = New List(Of String)
+
 
         Try
             Open()
             Comando = New SqlCommand(VstrSQL, ObjCon)
             Dr = Comando.ExecuteReader
             Do While Dr.Read
+                Me.LId_Log.Add(Dr("ID_LOG"))
                 Me.Lusuario.Add(Dr("USUARIO_LOG"))
                 Me.LSenha.Add(Decrypt(Dr("SENHA_LOG")))
             Loop
             Me.exito = True
+            Id_log = LId_Log(0)
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Error:", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Me.exito = False
