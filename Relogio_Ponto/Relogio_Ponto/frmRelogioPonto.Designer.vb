@@ -35,29 +35,36 @@ Partial Class frmRelogioPonto
         Me.FimAlm = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Saida = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Modo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.lblRelogioPonto = New System.Windows.Forms.Label()
-        Me.lblHorarioAtual = New System.Windows.Forms.Label()
         Me.lblHora = New System.Windows.Forms.Label()
         Me.lblData = New System.Windows.Forms.Label()
-        Me.btnEntrada = New System.Windows.Forms.PictureBox()
-        Me.lblEntrada = New System.Windows.Forms.Label()
-        Me.btnInicAlm = New System.Windows.Forms.PictureBox()
-        Me.lblInicAlm = New System.Windows.Forms.Label()
-        Me.lblFimAlm = New System.Windows.Forms.Label()
-        Me.btnFimAlm = New System.Windows.Forms.PictureBox()
-        Me.lblSaida = New System.Windows.Forms.Label()
-        Me.btnSaida = New System.Windows.Forms.PictureBox()
         Me.btnLogout = New System.Windows.Forms.PictureBox()
-        Me.lblLogout = New System.Windows.Forms.Label()
-        Me.rbtnHomeOffice = New System.Windows.Forms.RadioButton()
-        Me.rbtnPresencial = New System.Windows.Forms.RadioButton()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.ImgHomeOffice = New System.Windows.Forms.PictureBox()
+        Me.ImgPresencial = New System.Windows.Forms.PictureBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.ImgIniAlm = New System.Windows.Forms.PictureBox()
+        Me.ImgFimAlm = New System.Windows.Forms.PictureBox()
+        Me.ImgSaida = New System.Windows.Forms.PictureBox()
+        Me.ImgEntrada = New System.Windows.Forms.PictureBox()
+        Me.ImgEntradaHover = New System.Windows.Forms.PictureBox()
+        Me.ImgIniAlmHover = New System.Windows.Forms.PictureBox()
+        Me.ImgFimAlmHover = New System.Windows.Forms.PictureBox()
+        Me.ImgSaidaHover = New System.Windows.Forms.PictureBox()
         CType(Me.GridHorario, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btnEntrada, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btnInicAlm, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btnFimAlm, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btnSaida, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnLogout, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ImgHomeOffice, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ImgPresencial, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ImgIniAlm, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ImgFimAlm, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ImgSaida, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ImgEntrada, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ImgEntradaHover, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ImgIniAlmHover, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ImgFimAlmHover, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ImgSaidaHover, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GridHorario
@@ -66,21 +73,22 @@ Partial Class frmRelogioPonto
         Me.GridHorario.AllowUserToDeleteRows = False
         Me.GridHorario.AllowUserToResizeColumns = False
         Me.GridHorario.AllowUserToResizeRows = False
+        Me.GridHorario.BackgroundColor = System.Drawing.SystemColors.ButtonFace
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(85, Byte), Integer), CType(CType(151, Byte), Integer))
         DataGridViewCellStyle1.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.SteelBlue
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SteelBlue
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(85, Byte), Integer), CType(CType(151, Byte), Integer))
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.GridHorario.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.GridHorario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.GridHorario.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdLog, Me.NomLog, Me.Data, Me.Entrada, Me.InicAlm, Me.FimAlm, Me.Saida, Me.Modo})
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.InactiveCaption
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Desktop
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.CornflowerBlue
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkBlue
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.GridHorario.DefaultCellStyle = DataGridViewCellStyle2
@@ -149,240 +157,228 @@ Partial Class frmRelogioPonto
         Me.Modo.Name = "Modo"
         Me.Modo.Width = 150
         '
-        'lblRelogioPonto
-        '
-        Me.lblRelogioPonto.AutoSize = True
-        Me.lblRelogioPonto.Font = New System.Drawing.Font("Comic Sans MS", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lblRelogioPonto.ForeColor = System.Drawing.Color.SteelBlue
-        Me.lblRelogioPonto.Location = New System.Drawing.Point(461, 33)
-        Me.lblRelogioPonto.Name = "lblRelogioPonto"
-        Me.lblRelogioPonto.Size = New System.Drawing.Size(340, 55)
-        Me.lblRelogioPonto.TabIndex = 3
-        Me.lblRelogioPonto.Text = "Relógio de Ponto"
-        '
-        'lblHorarioAtual
-        '
-        Me.lblHorarioAtual.AutoSize = True
-        Me.lblHorarioAtual.Font = New System.Drawing.Font("Comic Sans MS", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lblHorarioAtual.ForeColor = System.Drawing.Color.SteelBlue
-        Me.lblHorarioAtual.Location = New System.Drawing.Point(513, 102)
-        Me.lblHorarioAtual.Name = "lblHorarioAtual"
-        Me.lblHorarioAtual.Size = New System.Drawing.Size(232, 45)
-        Me.lblHorarioAtual.TabIndex = 4
-        Me.lblHorarioAtual.Text = "Horário Atual"
-        '
         'lblHora
         '
         Me.lblHora.AutoSize = True
-        Me.lblHora.Font = New System.Drawing.Font("Comic Sans MS", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lblHora.ForeColor = System.Drawing.Color.LightSlateGray
-        Me.lblHora.Location = New System.Drawing.Point(553, 189)
+        Me.lblHora.Font = New System.Drawing.Font("Comic Sans MS", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.lblHora.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(85, Byte), Integer), CType(CType(151, Byte), Integer))
+        Me.lblHora.Location = New System.Drawing.Point(555, 147)
         Me.lblHora.Name = "lblHora"
-        Me.lblHora.Size = New System.Drawing.Size(143, 39)
+        Me.lblHora.Size = New System.Drawing.Size(135, 39)
         Me.lblHora.TabIndex = 4
         Me.lblHora.Text = "00:00:00"
         '
         'lblData
         '
         Me.lblData.AutoSize = True
-        Me.lblData.Font = New System.Drawing.Font("Comic Sans MS", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lblData.ForeColor = System.Drawing.Color.LightSlateGray
-        Me.lblData.Location = New System.Drawing.Point(535, 147)
+        Me.lblData.Font = New System.Drawing.Font("Comic Sans MS", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.lblData.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(85, Byte), Integer), CType(CType(151, Byte), Integer))
+        Me.lblData.Location = New System.Drawing.Point(532, 105)
         Me.lblData.Name = "lblData"
         Me.lblData.Size = New System.Drawing.Size(181, 39)
         Me.lblData.TabIndex = 4
         Me.lblData.Text = "00/00/0000"
         '
-        'btnEntrada
-        '
-        Me.btnEntrada.Image = CType(resources.GetObject("btnEntrada.Image"), System.Drawing.Image)
-        Me.btnEntrada.Location = New System.Drawing.Point(55, 362)
-        Me.btnEntrada.Name = "btnEntrada"
-        Me.btnEntrada.Size = New System.Drawing.Size(84, 94)
-        Me.btnEntrada.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.btnEntrada.TabIndex = 5
-        Me.btnEntrada.TabStop = False
-        '
-        'lblEntrada
-        '
-        Me.lblEntrada.AutoSize = True
-        Me.lblEntrada.Font = New System.Drawing.Font("Comic Sans MS", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lblEntrada.ForeColor = System.Drawing.Color.LightSlateGray
-        Me.lblEntrada.Location = New System.Drawing.Point(40, 459)
-        Me.lblEntrada.Name = "lblEntrada"
-        Me.lblEntrada.Size = New System.Drawing.Size(123, 39)
-        Me.lblEntrada.TabIndex = 4
-        Me.lblEntrada.Text = "Entrada"
-        '
-        'btnInicAlm
-        '
-        Me.btnInicAlm.Image = CType(resources.GetObject("btnInicAlm.Image"), System.Drawing.Image)
-        Me.btnInicAlm.Location = New System.Drawing.Point(402, 362)
-        Me.btnInicAlm.Name = "btnInicAlm"
-        Me.btnInicAlm.Size = New System.Drawing.Size(84, 94)
-        Me.btnInicAlm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.btnInicAlm.TabIndex = 6
-        Me.btnInicAlm.TabStop = False
-        '
-        'lblInicAlm
-        '
-        Me.lblInicAlm.AutoSize = True
-        Me.lblInicAlm.Font = New System.Drawing.Font("Comic Sans MS", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lblInicAlm.ForeColor = System.Drawing.Color.LightSlateGray
-        Me.lblInicAlm.Location = New System.Drawing.Point(351, 459)
-        Me.lblInicAlm.Name = "lblInicAlm"
-        Me.lblInicAlm.Size = New System.Drawing.Size(198, 39)
-        Me.lblInicAlm.TabIndex = 4
-        Me.lblInicAlm.Text = "Início Almoço"
-        '
-        'lblFimAlm
-        '
-        Me.lblFimAlm.AutoSize = True
-        Me.lblFimAlm.Font = New System.Drawing.Font("Comic Sans MS", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lblFimAlm.ForeColor = System.Drawing.Color.LightSlateGray
-        Me.lblFimAlm.Location = New System.Drawing.Point(740, 459)
-        Me.lblFimAlm.Name = "lblFimAlm"
-        Me.lblFimAlm.Size = New System.Drawing.Size(170, 39)
-        Me.lblFimAlm.TabIndex = 4
-        Me.lblFimAlm.Text = "Fim Almoço"
-        '
-        'btnFimAlm
-        '
-        Me.btnFimAlm.Image = CType(resources.GetObject("btnFimAlm.Image"), System.Drawing.Image)
-        Me.btnFimAlm.Location = New System.Drawing.Point(776, 362)
-        Me.btnFimAlm.Name = "btnFimAlm"
-        Me.btnFimAlm.Size = New System.Drawing.Size(84, 94)
-        Me.btnFimAlm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.btnFimAlm.TabIndex = 6
-        Me.btnFimAlm.TabStop = False
-        '
-        'lblSaida
-        '
-        Me.lblSaida.AutoSize = True
-        Me.lblSaida.Font = New System.Drawing.Font("Comic Sans MS", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lblSaida.ForeColor = System.Drawing.Color.LightSlateGray
-        Me.lblSaida.Location = New System.Drawing.Point(1102, 460)
-        Me.lblSaida.Name = "lblSaida"
-        Me.lblSaida.Size = New System.Drawing.Size(92, 39)
-        Me.lblSaida.TabIndex = 4
-        Me.lblSaida.Text = "Saída"
-        '
-        'btnSaida
-        '
-        Me.btnSaida.Image = CType(resources.GetObject("btnSaida.Image"), System.Drawing.Image)
-        Me.btnSaida.Location = New System.Drawing.Point(1090, 362)
-        Me.btnSaida.Name = "btnSaida"
-        Me.btnSaida.Size = New System.Drawing.Size(84, 94)
-        Me.btnSaida.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.btnSaida.TabIndex = 5
-        Me.btnSaida.TabStop = False
-        '
         'btnLogout
         '
         Me.btnLogout.Image = CType(resources.GetObject("btnLogout.Image"), System.Drawing.Image)
-        Me.btnLogout.Location = New System.Drawing.Point(1079, 818)
+        Me.btnLogout.Location = New System.Drawing.Point(1173, 12)
         Me.btnLogout.Name = "btnLogout"
-        Me.btnLogout.Size = New System.Drawing.Size(43, 43)
-        Me.btnLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnLogout.Size = New System.Drawing.Size(50, 52)
+        Me.btnLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.btnLogout.TabIndex = 6
         Me.btnLogout.TabStop = False
-        '
-        'lblLogout
-        '
-        Me.lblLogout.AutoSize = True
-        Me.lblLogout.Font = New System.Drawing.Font("Comic Sans MS", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lblLogout.ForeColor = System.Drawing.Color.Red
-        Me.lblLogout.Location = New System.Drawing.Point(1130, 821)
-        Me.lblLogout.Name = "lblLogout"
-        Me.lblLogout.Size = New System.Drawing.Size(83, 31)
-        Me.lblLogout.TabIndex = 4
-        Me.lblLogout.Text = "Logout"
-        '
-        'rbtnHomeOffice
-        '
-        Me.rbtnHomeOffice.AutoSize = True
-        Me.rbtnHomeOffice.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.rbtnHomeOffice.ForeColor = System.Drawing.Color.SteelBlue
-        Me.rbtnHomeOffice.Location = New System.Drawing.Point(494, 264)
-        Me.rbtnHomeOffice.Name = "rbtnHomeOffice"
-        Me.rbtnHomeOffice.Size = New System.Drawing.Size(142, 28)
-        Me.rbtnHomeOffice.TabIndex = 7
-        Me.rbtnHomeOffice.TabStop = True
-        Me.rbtnHomeOffice.Text = "Home Office"
-        Me.rbtnHomeOffice.UseVisualStyleBackColor = True
-        '
-        'rbtnPresencial
-        '
-        Me.rbtnPresencial.AutoSize = True
-        Me.rbtnPresencial.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.rbtnPresencial.ForeColor = System.Drawing.Color.SteelBlue
-        Me.rbtnPresencial.Location = New System.Drawing.Point(647, 264)
-        Me.rbtnPresencial.Name = "rbtnPresencial"
-        Me.rbtnPresencial.Size = New System.Drawing.Size(118, 28)
-        Me.rbtnPresencial.TabIndex = 7
-        Me.rbtnPresencial.TabStop = True
-        Me.rbtnPresencial.Text = "Presencial"
-        Me.rbtnPresencial.UseVisualStyleBackColor = True
         '
         'Timer1
         '
         Me.Timer1.Enabled = True
         Me.Timer1.Interval = 1000
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(402, 12)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(431, 81)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 8
+        Me.PictureBox1.TabStop = False
+        '
+        'ImgHomeOffice
+        '
+        Me.ImgHomeOffice.Image = CType(resources.GetObject("ImgHomeOffice.Image"), System.Drawing.Image)
+        Me.ImgHomeOffice.Location = New System.Drawing.Point(545, 207)
+        Me.ImgHomeOffice.Name = "ImgHomeOffice"
+        Me.ImgHomeOffice.Size = New System.Drawing.Size(156, 88)
+        Me.ImgHomeOffice.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.ImgHomeOffice.TabIndex = 9
+        Me.ImgHomeOffice.TabStop = False
+        '
+        'ImgPresencial
+        '
+        Me.ImgPresencial.Image = CType(resources.GetObject("ImgPresencial.Image"), System.Drawing.Image)
+        Me.ImgPresencial.Location = New System.Drawing.Point(545, 207)
+        Me.ImgPresencial.Name = "ImgPresencial"
+        Me.ImgPresencial.Size = New System.Drawing.Size(156, 88)
+        Me.ImgPresencial.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.ImgPresencial.TabIndex = 10
+        Me.ImgPresencial.TabStop = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Comic Sans MS", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(85, Byte), Integer), CType(CType(151, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(458, 234)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(115, 30)
+        Me.Label1.TabIndex = 11
+        Me.Label1.Text = "Presencial"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Comic Sans MS", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(85, Byte), Integer), CType(CType(151, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(674, 234)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(147, 30)
+        Me.Label2.TabIndex = 12
+        Me.Label2.Text = "Home Office"
+        '
+        'ImgIniAlm
+        '
+        Me.ImgIniAlm.Image = CType(resources.GetObject("ImgIniAlm.Image"), System.Drawing.Image)
+        Me.ImgIniAlm.Location = New System.Drawing.Point(346, 310)
+        Me.ImgIniAlm.Name = "ImgIniAlm"
+        Me.ImgIniAlm.Size = New System.Drawing.Size(227, 198)
+        Me.ImgIniAlm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.ImgIniAlm.TabIndex = 14
+        Me.ImgIniAlm.TabStop = False
+        '
+        'ImgFimAlm
+        '
+        Me.ImgFimAlm.Image = CType(resources.GetObject("ImgFimAlm.Image"), System.Drawing.Image)
+        Me.ImgFimAlm.Location = New System.Drawing.Point(674, 310)
+        Me.ImgFimAlm.Name = "ImgFimAlm"
+        Me.ImgFimAlm.Size = New System.Drawing.Size(227, 198)
+        Me.ImgFimAlm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.ImgFimAlm.TabIndex = 15
+        Me.ImgFimAlm.TabStop = False
+        '
+        'ImgSaida
+        '
+        Me.ImgSaida.Image = CType(resources.GetObject("ImgSaida.Image"), System.Drawing.Image)
+        Me.ImgSaida.Location = New System.Drawing.Point(975, 310)
+        Me.ImgSaida.Name = "ImgSaida"
+        Me.ImgSaida.Size = New System.Drawing.Size(227, 198)
+        Me.ImgSaida.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.ImgSaida.TabIndex = 16
+        Me.ImgSaida.TabStop = False
+        '
+        'ImgEntrada
+        '
+        Me.ImgEntrada.Image = CType(resources.GetObject("ImgEntrada.Image"), System.Drawing.Image)
+        Me.ImgEntrada.Location = New System.Drawing.Point(30, 310)
+        Me.ImgEntrada.Name = "ImgEntrada"
+        Me.ImgEntrada.Size = New System.Drawing.Size(227, 198)
+        Me.ImgEntrada.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.ImgEntrada.TabIndex = 18
+        Me.ImgEntrada.TabStop = False
+        '
+        'ImgEntradaHover
+        '
+        Me.ImgEntradaHover.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ImgEntradaHover.Image = CType(resources.GetObject("ImgEntradaHover.Image"), System.Drawing.Image)
+        Me.ImgEntradaHover.Location = New System.Drawing.Point(30, 310)
+        Me.ImgEntradaHover.Name = "ImgEntradaHover"
+        Me.ImgEntradaHover.Size = New System.Drawing.Size(227, 198)
+        Me.ImgEntradaHover.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.ImgEntradaHover.TabIndex = 19
+        Me.ImgEntradaHover.TabStop = False
+        Me.ImgEntradaHover.Visible = False
+        '
+        'ImgIniAlmHover
+        '
+        Me.ImgIniAlmHover.Image = CType(resources.GetObject("ImgIniAlmHover.Image"), System.Drawing.Image)
+        Me.ImgIniAlmHover.Location = New System.Drawing.Point(346, 310)
+        Me.ImgIniAlmHover.Name = "ImgIniAlmHover"
+        Me.ImgIniAlmHover.Size = New System.Drawing.Size(227, 198)
+        Me.ImgIniAlmHover.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.ImgIniAlmHover.TabIndex = 20
+        Me.ImgIniAlmHover.TabStop = False
+        Me.ImgIniAlmHover.Visible = False
+        '
+        'ImgFimAlmHover
+        '
+        Me.ImgFimAlmHover.Image = CType(resources.GetObject("ImgFimAlmHover.Image"), System.Drawing.Image)
+        Me.ImgFimAlmHover.Location = New System.Drawing.Point(674, 310)
+        Me.ImgFimAlmHover.Name = "ImgFimAlmHover"
+        Me.ImgFimAlmHover.Size = New System.Drawing.Size(227, 198)
+        Me.ImgFimAlmHover.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.ImgFimAlmHover.TabIndex = 21
+        Me.ImgFimAlmHover.TabStop = False
+        Me.ImgFimAlmHover.Visible = False
+        '
+        'ImgSaidaHover
+        '
+        Me.ImgSaidaHover.Image = CType(resources.GetObject("ImgSaidaHover.Image"), System.Drawing.Image)
+        Me.ImgSaidaHover.Location = New System.Drawing.Point(975, 310)
+        Me.ImgSaidaHover.Name = "ImgSaidaHover"
+        Me.ImgSaidaHover.Size = New System.Drawing.Size(227, 198)
+        Me.ImgSaidaHover.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.ImgSaidaHover.TabIndex = 22
+        Me.ImgSaidaHover.TabStop = False
+        Me.ImgSaidaHover.Visible = False
+        '
         'frmRelogioPonto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.ClientSize = New System.Drawing.Size(1235, 871)
-        Me.Controls.Add(Me.rbtnPresencial)
-        Me.Controls.Add(Me.rbtnHomeOffice)
-        Me.Controls.Add(Me.btnFimAlm)
+        Me.Controls.Add(Me.ImgSaidaHover)
+        Me.Controls.Add(Me.ImgFimAlmHover)
+        Me.Controls.Add(Me.ImgIniAlmHover)
+        Me.Controls.Add(Me.ImgEntradaHover)
+        Me.Controls.Add(Me.ImgEntrada)
+        Me.Controls.Add(Me.ImgSaida)
+        Me.Controls.Add(Me.ImgFimAlm)
+        Me.Controls.Add(Me.ImgIniAlm)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.ImgPresencial)
+        Me.Controls.Add(Me.ImgHomeOffice)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnLogout)
-        Me.Controls.Add(Me.btnInicAlm)
-        Me.Controls.Add(Me.btnSaida)
-        Me.Controls.Add(Me.btnEntrada)
         Me.Controls.Add(Me.lblData)
         Me.Controls.Add(Me.lblHora)
-        Me.Controls.Add(Me.lblLogout)
-        Me.Controls.Add(Me.lblFimAlm)
-        Me.Controls.Add(Me.lblInicAlm)
-        Me.Controls.Add(Me.lblSaida)
-        Me.Controls.Add(Me.lblEntrada)
-        Me.Controls.Add(Me.lblHorarioAtual)
-        Me.Controls.Add(Me.lblRelogioPonto)
         Me.Controls.Add(Me.GridHorario)
         Me.Name = "frmRelogioPonto"
         Me.Text = "frmRelogioPonto"
         CType(Me.GridHorario, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnEntrada, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnInicAlm, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnFimAlm, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnSaida, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnLogout, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ImgHomeOffice, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ImgPresencial, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ImgIniAlm, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ImgFimAlm, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ImgSaida, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ImgEntrada, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ImgEntradaHover, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ImgIniAlmHover, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ImgFimAlmHover, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ImgSaidaHover, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents GridHorario As DataGridView
-    Friend WithEvents lblRelogioPonto As Label
-    Friend WithEvents lblHorarioAtual As Label
     Friend WithEvents lblHora As Label
     Friend WithEvents lblData As Label
-    Friend WithEvents btnEntrada As PictureBox
-    Friend WithEvents lblEntrada As Label
-    Friend WithEvents btnInicAlm As PictureBox
-    Friend WithEvents lblInicAlm As Label
-    Friend WithEvents lblFimAlm As Label
-    Friend WithEvents btnFimAlm As PictureBox
-    Friend WithEvents lblSaida As Label
-    Friend WithEvents btnSaida As PictureBox
     Friend WithEvents btnLogout As PictureBox
-    Friend WithEvents lblLogout As Label
-    Friend WithEvents rbtnHomeOffice As RadioButton
-    Friend WithEvents rbtnPresencial As RadioButton
     Friend WithEvents Timer1 As Timer
     Friend WithEvents IdLog As DataGridViewTextBoxColumn
     Friend WithEvents NomLog As DataGridViewTextBoxColumn
@@ -392,4 +388,17 @@ Partial Class frmRelogioPonto
     Friend WithEvents FimAlm As DataGridViewTextBoxColumn
     Friend WithEvents Saida As DataGridViewTextBoxColumn
     Friend WithEvents Modo As DataGridViewTextBoxColumn
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents ImgHomeOffice As PictureBox
+    Friend WithEvents ImgPresencial As PictureBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents ImgIniAlm As PictureBox
+    Friend WithEvents ImgFimAlm As PictureBox
+    Friend WithEvents ImgSaida As PictureBox
+    Friend WithEvents ImgEntrada As PictureBox
+    Friend WithEvents ImgEntradaHover As PictureBox
+    Friend WithEvents ImgIniAlmHover As PictureBox
+    Friend WithEvents ImgFimAlmHover As PictureBox
+    Friend WithEvents ImgSaidaHover As PictureBox
 End Class

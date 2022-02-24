@@ -5,7 +5,7 @@
         Logout()
     End Sub
 
-    Private Sub lblLogout_Click(sender As Object, e As EventArgs) Handles lblLogout.Click
+    Private Sub lblLogout_Click(sender As Object, e As EventArgs)
         Logout()
     End Sub
 
@@ -44,20 +44,9 @@
         End If
     End Sub
 
-    Private Sub btnEntrada_Click(sender As Object, e As EventArgs) Handles btnEntrada.Click
-        If VerificaModo() Then
-            InserirHorarioEntrada()
-        End If
+    Private Sub btnEntrada_Click(sender As Object, e As EventArgs)
+        InserirHorarioEntrada()
     End Sub
-
-    Private Function VerificaModo()
-        If Not (rbtnHomeOffice.Checked Or rbtnPresencial.Checked) Then
-            MessageBox.Show("Antes de lançar um horário, selecione o modo", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Return False
-        Else
-            Return True
-        End If
-    End Function
 
     Private Sub CarregaGridHoras()
         With GridHorario
@@ -83,10 +72,10 @@
             If Horas.LId_Horas.Count = 0 Then
                 Dim Hora As String = lblHora.Text
                 Dim Modo As String = ""
-                If rbtnHomeOffice.Checked Then
-                    Modo = rbtnHomeOffice.Text
+                If ImgHomeOffice.Visible Then
+                    Modo = "Home Office"
                 Else
-                    Modo = rbtnPresencial.Text
+                    Modo = "Presencial"
                 End If
 
                 Horas.InsertHoraEntrada(Id_log, Data, Hora, Modo)
@@ -101,5 +90,59 @@
             End If
         End If
 
+    End Sub
+
+    Private Sub ImgPresencial_Click(sender As Object, e As EventArgs) Handles ImgPresencial.Click
+        ImgHomeOffice.Visible = True
+        ImgPresencial.Visible = False
+    End Sub
+
+    Private Sub ImgHomeOffice_Click(sender As Object, e As EventArgs) Handles ImgHomeOffice.Click
+        ImgPresencial.Visible = True
+        ImgHomeOffice.Visible = False
+    End Sub
+
+    Private Sub ImgEntrada_MouseEnter(sender As Object, e As EventArgs) Handles ImgEntrada.MouseEnter
+        ImgEntradaHover.Visible = True
+        ImgEntrada.Visible = False
+    End Sub
+
+    Private Sub ImgEntrada_MouseLeave(sender As Object, e As EventArgs) Handles ImgEntrada.MouseLeave
+        ImgEntrada.Visible = True
+        ImgEntradaHover.Visible = False
+    End Sub
+
+    Private Sub ImgEntradaHover_Click(sender As Object, e As EventArgs) Handles ImgEntradaHover.Click
+        InserirHorarioEntrada()
+    End Sub
+
+    Private Sub ImgIniAlm_MouseEnter(sender As Object, e As EventArgs) Handles ImgIniAlm.MouseEnter
+        ImgIniAlmHover.Visible = True
+        ImgIniAlm.Visible = False
+    End Sub
+
+    Private Sub ImgIniAlm_MouseLeave(sender As Object, e As EventArgs) Handles ImgIniAlm.MouseLeave
+        ImgIniAlm.Visible = True
+        ImgIniAlmHover.Visible = False
+    End Sub
+
+    Private Sub ImgFimAlm_MouseEnter(sender As Object, e As EventArgs) Handles ImgFimAlm.MouseEnter
+        ImgFimAlmHover.Visible = True
+        ImgFimAlm.Visible = False
+    End Sub
+
+    Private Sub ImgFimAlm_MouseLeave(sender As Object, e As EventArgs) Handles ImgFimAlm.MouseLeave
+        ImgFimAlm.Visible = True
+        ImgFimAlmHover.Visible = False
+    End Sub
+
+    Private Sub ImgSaida_MouseEnter(sender As Object, e As EventArgs) Handles ImgSaida.MouseEnter
+        ImgSaidaHover.Visible = True
+        ImgSaida.Visible = False
+    End Sub
+
+    Private Sub ImgSaida_MouseLeave(sender As Object, e As EventArgs) Handles ImgSaida.MouseLeave
+        ImgSaida.Visible = True
+        ImgSaidaHover.Visible = False
     End Sub
 End Class
