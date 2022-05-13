@@ -9,7 +9,6 @@ C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Pont
 C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Ponto\bin\Debug\net5.0-windows\Relogio_Ponto.runtimeconfig.json
 C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Ponto\bin\Debug\net5.0-windows\Relogio_Ponto.runtimeconfig.dev.json
 C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Ponto\bin\Debug\net5.0-windows\Relogio_Ponto.dll
-C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Ponto\bin\Debug\net5.0-windows\ref\Relogio_Ponto.dll
 C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Ponto\bin\Debug\net5.0-windows\Relogio_Ponto.pdb
 C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Ponto\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
 C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Ponto\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
@@ -25,3 +24,5 @@ C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Pont
 C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Ponto\obj\Debug\net5.0-windows\Relogio_Ponto.frmRelogioPonto.resources
 C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Ponto\obj\Debug\net5.0-windows\Relogio_Ponto.Resources.resources
 C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Ponto\obj\Debug\net5.0-windows\Relogio_Ponto.vbproj.AssemblyReference.cache
+C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Ponto\obj\Debug\net5.0-windows\Relogio_Ponto.vbproj.CopyComplete
+C:\Users\T460s\Documents\GitHub\projeto_relogio_ponto\Relogio_Ponto\Relogio_Ponto\obj\Debug\net5.0-windows\refint\Relogio_Ponto.dll

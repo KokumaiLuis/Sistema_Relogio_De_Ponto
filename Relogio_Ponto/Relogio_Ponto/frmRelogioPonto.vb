@@ -108,8 +108,8 @@
     End Sub
 
     Private Sub ImgEntrada_MouseLeave(sender As Object, e As EventArgs) Handles ImgEntrada.MouseLeave
-        ImgEntrada.Visible = True
-        ImgEntradaHover.Visible = False
+        'ImgEntrada.Visible = True
+        'ImgEntradaHover.Visible = False
     End Sub
 
     Private Sub ImgEntradaHover_Click(sender As Object, e As EventArgs) Handles ImgEntradaHover.Click
@@ -122,8 +122,8 @@
     End Sub
 
     Private Sub ImgIniAlm_MouseLeave(sender As Object, e As EventArgs) Handles ImgIniAlm.MouseLeave
-        ImgIniAlm.Visible = True
-        ImgIniAlmHover.Visible = False
+        'ImgIniAlm.Visible = True
+        'ImgIniAlmHover.Visible = False
     End Sub
 
     Private Sub ImgFimAlm_MouseEnter(sender As Object, e As EventArgs) Handles ImgFimAlm.MouseEnter
@@ -132,8 +132,8 @@
     End Sub
 
     Private Sub ImgFimAlm_MouseLeave(sender As Object, e As EventArgs) Handles ImgFimAlm.MouseLeave
-        ImgFimAlm.Visible = True
-        ImgFimAlmHover.Visible = False
+        'ImgFimAlm.Visible = True
+        'ImgFimAlmHover.Visible = False
     End Sub
 
     Private Sub ImgSaida_MouseEnter(sender As Object, e As EventArgs) Handles ImgSaida.MouseEnter
@@ -142,6 +142,26 @@
     End Sub
 
     Private Sub ImgSaida_MouseLeave(sender As Object, e As EventArgs) Handles ImgSaida.MouseLeave
+        'ImgSaida.Visible = True
+        'ImgSaidaHover.Visible = False
+    End Sub
+
+    Private Sub ImgEntradaHover_MouseLeave(sender As Object, e As EventArgs) Handles ImgEntradaHover.MouseLeave
+        ImgEntrada.Visible = True
+        ImgEntradaHover.Visible = False
+    End Sub
+
+    Private Sub ImgIniAlmHover_MouseLeave(sender As Object, e As EventArgs) Handles ImgIniAlmHover.MouseLeave
+        ImgIniAlm.Visible = True
+        ImgIniAlmHover.Visible = False
+    End Sub
+
+    Private Sub ImgFimAlmHover_MouseLeave(sender As Object, e As EventArgs) Handles ImgFimAlmHover.MouseLeave
+        ImgFimAlm.Visible = True
+        ImgFimAlmHover.Visible = False
+    End Sub
+
+    Private Sub ImgSaidaHover_MouseLeave(sender As Object, e As EventArgs) Handles ImgSaidaHover.MouseLeave
         ImgSaida.Visible = True
         ImgSaidaHover.Visible = False
     End Sub
