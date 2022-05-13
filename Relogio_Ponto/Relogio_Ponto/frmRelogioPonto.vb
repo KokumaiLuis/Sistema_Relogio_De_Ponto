@@ -21,6 +21,8 @@
         CarregaData()
         CarregaHoras()
 
+        ImgHomeOffice.Visible = False
+
         CarregaGridHoras()
     End Sub
 
@@ -92,6 +94,24 @@
 
     End Sub
 
+    Private Sub InserirHorarioAlmoco()
+        With GridHorario.Rows(GridHorario.Rows.Count - 1)
+            If .Cells(4).Value = "00:00:00" Then
+                Dim Hora As String = lblHora.Text
+                Horas.InsertHoraAlmoco(.Cells(0).Value, Hora)
+
+                If Horas.Exito Then
+                    MessageBox.Show("Horário de almoço lançado com sucesso!", "Concluído", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                End If
+
+                CarregaGridHoras()
+
+            Else
+                MessageBox.Show("Horário de almoço já lançado para o dia de hoje.", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            End If
+        End With
+    End Sub
+
     Private Sub ImgPresencial_Click(sender As Object, e As EventArgs) Handles ImgPresencial.Click
         ImgHomeOffice.Visible = True
         ImgPresencial.Visible = False
@@ -107,11 +127,6 @@
         ImgEntrada.Visible = False
     End Sub
 
-    Private Sub ImgEntrada_MouseLeave(sender As Object, e As EventArgs) Handles ImgEntrada.MouseLeave
-        'ImgEntrada.Visible = True
-        'ImgEntradaHover.Visible = False
-    End Sub
-
     Private Sub ImgEntradaHover_Click(sender As Object, e As EventArgs) Handles ImgEntradaHover.Click
         InserirHorarioEntrada()
     End Sub
@@ -121,29 +136,14 @@
         ImgIniAlm.Visible = False
     End Sub
 
-    Private Sub ImgIniAlm_MouseLeave(sender As Object, e As EventArgs) Handles ImgIniAlm.MouseLeave
-        'ImgIniAlm.Visible = True
-        'ImgIniAlmHover.Visible = False
-    End Sub
-
     Private Sub ImgFimAlm_MouseEnter(sender As Object, e As EventArgs) Handles ImgFimAlm.MouseEnter
         ImgFimAlmHover.Visible = True
         ImgFimAlm.Visible = False
     End Sub
 
-    Private Sub ImgFimAlm_MouseLeave(sender As Object, e As EventArgs) Handles ImgFimAlm.MouseLeave
-        'ImgFimAlm.Visible = True
-        'ImgFimAlmHover.Visible = False
-    End Sub
-
     Private Sub ImgSaida_MouseEnter(sender As Object, e As EventArgs) Handles ImgSaida.MouseEnter
         ImgSaidaHover.Visible = True
         ImgSaida.Visible = False
-    End Sub
-
-    Private Sub ImgSaida_MouseLeave(sender As Object, e As EventArgs) Handles ImgSaida.MouseLeave
-        'ImgSaida.Visible = True
-        'ImgSaidaHover.Visible = False
     End Sub
 
     Private Sub ImgEntradaHover_MouseLeave(sender As Object, e As EventArgs) Handles ImgEntradaHover.MouseLeave
@@ -165,4 +165,29 @@
         ImgSaida.Visible = True
         ImgSaidaHover.Visible = False
     End Sub
+
+    Private Sub ImgIniAlmHover_Click(sender As Object, e As EventArgs) Handles ImgIniAlmHover.Click
+        If VerificaHorarioEntrada() Then
+            InserirHorarioAlmoco()
+        Else
+            MessageBox.Show("O horário de entrada deve ser lançado antes do almoço.", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End If
+    End Sub
+
+    Private Function VerificaHorarioEntrada() As Boolean
+        Dim Data As String = lblData.Text.Substring(6, 4) & "-" & lblData.Text.Substring(3, 2) & "-" & lblData.Text.Substring(0, 2)
+
+        Horas.VerificaMarcacoes(Id_log, Data)
+
+        If Horas.Exito Then
+            If Horas.LId_Horas.Count > 0 Then
+                Return True
+            End If
+        Else
+            MessageBox.Show("Erro Inesperado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
+
+        Return False
+    End Function
+
 End Class

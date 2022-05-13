@@ -91,7 +91,19 @@
 
         Me.Exito = False
 
-        Hr.InsertHoraEntrada(VstrSQL)
+        Hr.SQLCommand(VstrSQL)
+
+        Me.Exito = Hr.Exito
+
+    End Sub
+
+    Public Sub InsertHoraAlmoco(ByVal IdHoras As Integer,
+                                 ByVal HoraAlmoco As String)
+        Dim VstrSQL As String = "UPDATE TB_HORAS SET INICIO_ALMOCO = '" & HoraAlmoco & "' WHERE ID_HORAS = " & IdHoras
+
+        Me.Exito = False
+
+        Hr.SQLCommand(VstrSQL)
 
         Me.Exito = Hr.Exito
 

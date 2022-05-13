@@ -126,7 +126,7 @@ Public Class TB_Horas
 
     End Sub
 
-    Public Sub InsertHoraEntrada(ByVal VstrSQL As String)
+    Public Sub SQLCommand(ByVal VstrSQL As String)
         Me.Exito = False
 
         Try
