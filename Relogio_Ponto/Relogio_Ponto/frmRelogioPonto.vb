@@ -112,6 +112,24 @@
         End With
     End Sub
 
+    Private Sub InserirHorarioFimAlmoco()
+        With GridHorario.Rows(GridHorario.Rows.Count - 1)
+            If .Cells(5).Value = "00:00:00" Then
+                Dim Hora As String = lblHora.Text
+                Horas.InsertHoraFimAlmoco(.Cells(0).Value, Hora)
+
+                If Horas.Exito Then
+                    MessageBox.Show("Horário de fim almoço lançado com sucesso!", "Concluído", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                End If
+
+                CarregaGridHoras()
+
+            Else
+                MessageBox.Show("Horário de fim almoço já lançado para o dia de hoje.", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            End If
+        End With
+    End Sub
+
     Private Sub ImgPresencial_Click(sender As Object, e As EventArgs) Handles ImgPresencial.Click
         ImgHomeOffice.Visible = True
         ImgPresencial.Visible = False
@@ -190,4 +208,22 @@
         Return False
     End Function
 
+    Private Function VerificaHorarioIniAlm() As Boolean
+        Dim Data As String = lblData.Text.Substring(6, 4) & "-" & lblData.Text.Substring(3, 2) & "-" & lblData.Text.Substring(0, 2)
+
+        With GridHorario.Rows(GridHorario.Rows.Count - 1)
+            If .Cells(2).Value = Data And .Cells(4).Value <> "00:00:00" Then
+                Return True
+            End If
+        End With
+        Return False
+    End Function
+
+    Private Sub ImgFimAlmHover_Click(sender As Object, e As EventArgs) Handles ImgFimAlmHover.Click
+        If VerificaHorarioIniAlm() Then
+            InserirHorarioFimAlmoco()
+        Else
+            MessageBox.Show("O horário de início almoço deve ser lançado antes do fim almoço.", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End If
+    End Sub
 End Class

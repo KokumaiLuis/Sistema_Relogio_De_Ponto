@@ -109,4 +109,16 @@
 
     End Sub
 
+    Public Sub InsertHoraFimAlmoco(ByVal IdHoras As Integer,
+                                 ByVal HoraAlmoco As String)
+        Dim VstrSQL As String = "UPDATE TB_HORAS SET FIM_ALMOCO = '" & HoraAlmoco & "' WHERE ID_HORAS = " & IdHoras
+
+        Me.Exito = False
+
+        Hr.SQLCommand(VstrSQL)
+
+        Me.Exito = Hr.Exito
+
+    End Sub
+
 End Class
