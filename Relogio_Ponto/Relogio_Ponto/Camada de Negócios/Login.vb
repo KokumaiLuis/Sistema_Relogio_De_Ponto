@@ -7,6 +7,9 @@
     Public Lusuario As List(Of String)
     Public Lsenha As List(Of String)
 
+    Public Usuario As String
+    Public Senha As String
+
     'Sub para gravar novo usuário
     Public Sub Gravar(ByVal usuario As String,
                       ByVal senha As String)
@@ -28,14 +31,13 @@
     Public Sub SelectLista(ByVal usuario As String)
         Dim VstrSQL As String = "SELECT * FROM TB_LOGIN WHERE USUARIO_LOG = '" & usuario & "'"
 
-        Me.Lusuario = New List(Of String)
-        Me.Lsenha = New List(Of String)
-        Me.exito = False
+        Me.Usuario = ""
+        Me.Senha = ""
 
         Log.SelectValues(VstrSQL)
 
-        Me.Lusuario = Log.Lusuario
-        Me.Lsenha = Log.LSenha
+        Me.Usuario = Log.Usuario
+        Me.Senha = Log.Senha
         Me.exito = Log.exito
 
     End Sub

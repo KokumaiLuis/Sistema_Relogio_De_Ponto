@@ -34,9 +34,10 @@ Partial Class frmLogin
         '
         'txtUsuario
         '
-        Me.txtUsuario.Location = New System.Drawing.Point(75, 167)
+        Me.txtUsuario.Location = New System.Drawing.Point(60, 134)
+        Me.txtUsuario.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtUsuario.Name = "txtUsuario"
-        Me.txtUsuario.Size = New System.Drawing.Size(281, 31)
+        Me.txtUsuario.Size = New System.Drawing.Size(226, 27)
         Me.txtUsuario.TabIndex = 0
         '
         'lblUsuario
@@ -44,18 +45,20 @@ Partial Class frmLogin
         Me.lblUsuario.AutoSize = True
         Me.lblUsuario.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.lblUsuario.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.lblUsuario.Location = New System.Drawing.Point(74, 129)
+        Me.lblUsuario.Location = New System.Drawing.Point(59, 103)
+        Me.lblUsuario.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblUsuario.Name = "lblUsuario"
-        Me.lblUsuario.Size = New System.Drawing.Size(72, 24)
+        Me.lblUsuario.Size = New System.Drawing.Size(62, 20)
         Me.lblUsuario.TabIndex = 1
         Me.lblUsuario.Text = "Usuário"
         '
         'txtSenha
         '
-        Me.txtSenha.Location = New System.Drawing.Point(75, 256)
+        Me.txtSenha.Location = New System.Drawing.Point(60, 205)
+        Me.txtSenha.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtSenha.Name = "txtSenha"
         Me.txtSenha.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtSenha.Size = New System.Drawing.Size(281, 31)
+        Me.txtSenha.Size = New System.Drawing.Size(226, 27)
         Me.txtSenha.TabIndex = 0
         '
         'lblSenha
@@ -63,9 +66,10 @@ Partial Class frmLogin
         Me.lblSenha.AutoSize = True
         Me.lblSenha.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.lblSenha.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.lblSenha.Location = New System.Drawing.Point(74, 218)
+        Me.lblSenha.Location = New System.Drawing.Point(59, 174)
+        Me.lblSenha.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblSenha.Name = "lblSenha"
-        Me.lblSenha.Size = New System.Drawing.Size(59, 24)
+        Me.lblSenha.Size = New System.Drawing.Size(51, 20)
         Me.lblSenha.TabIndex = 1
         Me.lblSenha.Text = "Senha"
         '
@@ -74,9 +78,10 @@ Partial Class frmLogin
         Me.lblLogin.AutoSize = True
         Me.lblLogin.Font = New System.Drawing.Font("Comic Sans MS", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.lblLogin.ForeColor = System.Drawing.Color.SteelBlue
-        Me.lblLogin.Location = New System.Drawing.Point(155, 43)
+        Me.lblLogin.Location = New System.Drawing.Point(124, 34)
+        Me.lblLogin.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblLogin.Name = "lblLogin"
-        Me.lblLogin.Size = New System.Drawing.Size(120, 55)
+        Me.lblLogin.Size = New System.Drawing.Size(103, 48)
         Me.lblLogin.TabIndex = 2
         Me.lblLogin.Text = "Login"
         '
@@ -85,9 +90,10 @@ Partial Class frmLogin
         Me.btnEntrar.BackColor = System.Drawing.Color.SteelBlue
         Me.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEntrar.ForeColor = System.Drawing.Color.White
-        Me.btnEntrar.Location = New System.Drawing.Point(156, 326)
+        Me.btnEntrar.Location = New System.Drawing.Point(125, 261)
+        Me.btnEntrar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnEntrar.Name = "btnEntrar"
-        Me.btnEntrar.Size = New System.Drawing.Size(112, 34)
+        Me.btnEntrar.Size = New System.Drawing.Size(90, 27)
         Me.btnEntrar.TabIndex = 3
         Me.btnEntrar.Text = "Entrar"
         Me.btnEntrar.UseVisualStyleBackColor = False
@@ -97,9 +103,10 @@ Partial Class frmLogin
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label1.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.Label1.Location = New System.Drawing.Point(114, 422)
+        Me.Label1.Location = New System.Drawing.Point(91, 338)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(196, 24)
+        Me.Label1.Size = New System.Drawing.Size(168, 20)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Não possui login ainda?"
         '
@@ -108,18 +115,19 @@ Partial Class frmLogin
         Me.lblCadastro.AutoSize = True
         Me.lblCadastro.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point)
         Me.lblCadastro.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.lblCadastro.Location = New System.Drawing.Point(155, 447)
+        Me.lblCadastro.Location = New System.Drawing.Point(124, 358)
+        Me.lblCadastro.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblCadastro.Name = "lblCadastro"
-        Me.lblCadastro.Size = New System.Drawing.Size(113, 24)
+        Me.lblCadastro.Size = New System.Drawing.Size(93, 20)
         Me.lblCadastro.TabIndex = 1
         Me.lblCadastro.Text = "Cadastre-se"
         '
         'frmLogin
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.ClientSize = New System.Drawing.Size(428, 505)
+        Me.ClientSize = New System.Drawing.Size(342, 404)
         Me.Controls.Add(Me.btnEntrar)
         Me.Controls.Add(Me.lblLogin)
         Me.Controls.Add(Me.lblCadastro)
@@ -128,7 +136,10 @@ Partial Class frmLogin
         Me.Controls.Add(Me.lblUsuario)
         Me.Controls.Add(Me.txtSenha)
         Me.Controls.Add(Me.txtUsuario)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.MaximizeBox = False
         Me.Name = "frmLogin"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
         Me.ResumeLayout(False)
         Me.PerformLayout()

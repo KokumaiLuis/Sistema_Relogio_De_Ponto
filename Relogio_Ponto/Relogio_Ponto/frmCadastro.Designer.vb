@@ -36,9 +36,10 @@ Partial Class frmCadastro
         Me.lblCadastro.AutoSize = True
         Me.lblCadastro.Font = New System.Drawing.Font("Comic Sans MS", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.lblCadastro.ForeColor = System.Drawing.Color.SteelBlue
-        Me.lblCadastro.Location = New System.Drawing.Point(53, 26)
+        Me.lblCadastro.Location = New System.Drawing.Point(42, 21)
+        Me.lblCadastro.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblCadastro.Name = "lblCadastro"
-        Me.lblCadastro.Size = New System.Drawing.Size(528, 55)
+        Me.lblCadastro.Size = New System.Drawing.Size(454, 48)
         Me.lblCadastro.TabIndex = 5
         Me.lblCadastro.Text = "Cadastro de Novo Usuário"
         '
@@ -47,25 +48,28 @@ Partial Class frmCadastro
         Me.lblUsuario.AutoSize = True
         Me.lblUsuario.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.lblUsuario.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.lblUsuario.Location = New System.Drawing.Point(117, 136)
+        Me.lblUsuario.Location = New System.Drawing.Point(94, 109)
+        Me.lblUsuario.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblUsuario.Name = "lblUsuario"
-        Me.lblUsuario.Size = New System.Drawing.Size(81, 24)
+        Me.lblUsuario.Size = New System.Drawing.Size(70, 20)
         Me.lblUsuario.TabIndex = 4
         Me.lblUsuario.Text = "Usuário*"
         '
         'txtUsuario
         '
-        Me.txtUsuario.Location = New System.Drawing.Point(204, 132)
+        Me.txtUsuario.Location = New System.Drawing.Point(163, 106)
+        Me.txtUsuario.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtUsuario.Name = "txtUsuario"
-        Me.txtUsuario.Size = New System.Drawing.Size(281, 31)
+        Me.txtUsuario.Size = New System.Drawing.Size(226, 27)
         Me.txtUsuario.TabIndex = 3
         '
         'txtSenha
         '
-        Me.txtSenha.Location = New System.Drawing.Point(204, 187)
+        Me.txtSenha.Location = New System.Drawing.Point(163, 150)
+        Me.txtSenha.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtSenha.Name = "txtSenha"
         Me.txtSenha.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtSenha.Size = New System.Drawing.Size(281, 31)
+        Me.txtSenha.Size = New System.Drawing.Size(226, 27)
         Me.txtSenha.TabIndex = 3
         '
         'lblSenha
@@ -73,9 +77,10 @@ Partial Class frmCadastro
         Me.lblSenha.AutoSize = True
         Me.lblSenha.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.lblSenha.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.lblSenha.Location = New System.Drawing.Point(117, 191)
+        Me.lblSenha.Location = New System.Drawing.Point(94, 153)
+        Me.lblSenha.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblSenha.Name = "lblSenha"
-        Me.lblSenha.Size = New System.Drawing.Size(68, 24)
+        Me.lblSenha.Size = New System.Drawing.Size(59, 20)
         Me.lblSenha.TabIndex = 4
         Me.lblSenha.Text = "Senha*"
         '
@@ -84,9 +89,10 @@ Partial Class frmCadastro
         Me.btnCancelar.BackColor = System.Drawing.Color.LightSlateGray
         Me.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCancelar.ForeColor = System.Drawing.Color.White
-        Me.btnCancelar.Location = New System.Drawing.Point(329, 269)
+        Me.btnCancelar.Location = New System.Drawing.Point(263, 215)
+        Me.btnCancelar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnCancelar.Name = "btnCancelar"
-        Me.btnCancelar.Size = New System.Drawing.Size(112, 34)
+        Me.btnCancelar.Size = New System.Drawing.Size(90, 27)
         Me.btnCancelar.TabIndex = 6
         Me.btnCancelar.Text = "Cancelar"
         Me.btnCancelar.UseVisualStyleBackColor = False
@@ -96,19 +102,20 @@ Partial Class frmCadastro
         Me.btnGravar.BackColor = System.Drawing.Color.SteelBlue
         Me.btnGravar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGravar.ForeColor = System.Drawing.Color.White
-        Me.btnGravar.Location = New System.Drawing.Point(195, 269)
+        Me.btnGravar.Location = New System.Drawing.Point(156, 215)
+        Me.btnGravar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnGravar.Name = "btnGravar"
-        Me.btnGravar.Size = New System.Drawing.Size(112, 34)
+        Me.btnGravar.Size = New System.Drawing.Size(90, 27)
         Me.btnGravar.TabIndex = 6
         Me.btnGravar.Text = "Gravar"
         Me.btnGravar.UseVisualStyleBackColor = False
         '
         'frmCadastro
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.ClientSize = New System.Drawing.Size(629, 335)
+        Me.ClientSize = New System.Drawing.Size(503, 268)
         Me.Controls.Add(Me.btnGravar)
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.lblCadastro)
@@ -116,7 +123,10 @@ Partial Class frmCadastro
         Me.Controls.Add(Me.lblUsuario)
         Me.Controls.Add(Me.txtSenha)
         Me.Controls.Add(Me.txtUsuario)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.MaximizeBox = False
         Me.Name = "frmCadastro"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Cadastro"
         Me.ResumeLayout(False)
         Me.PerformLayout()

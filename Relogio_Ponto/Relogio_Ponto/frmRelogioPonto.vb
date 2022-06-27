@@ -46,10 +46,6 @@
         End If
     End Sub
 
-    Private Sub btnEntrada_Click(sender As Object, e As EventArgs)
-        InserirHorarioEntrada()
-    End Sub
-
     Private Sub CarregaGridHoras()
         With GridHorario
             .Rows.Clear()
@@ -227,7 +223,7 @@
     End Function
 
     Private Function VerificaHorarioIniAlm() As Boolean
-        Dim Data As String = lblData.Text.Substring(6, 4) & "-" & lblData.Text.Substring(3, 2) & "-" & lblData.Text.Substring(0, 2)
+        Dim Data As String = lblData.Text
 
         With GridHorario.Rows(GridHorario.Rows.Count - 1)
             If .Cells(2).Value = Data And .Cells(4).Value <> "00:00:00" Then
@@ -238,7 +234,7 @@
     End Function
 
     Private Function VerificaHorarioFimAlm() As Boolean
-        Dim Data As String = lblData.Text.Substring(6, 4) & "-" & lblData.Text.Substring(3, 2) & "-" & lblData.Text.Substring(0, 2)
+        Dim Data As String = lblData.Text
 
         With GridHorario.Rows(GridHorario.Rows.Count - 1)
             If .Cells(2).Value = Data And .Cells(5).Value <> "00:00:00" Then

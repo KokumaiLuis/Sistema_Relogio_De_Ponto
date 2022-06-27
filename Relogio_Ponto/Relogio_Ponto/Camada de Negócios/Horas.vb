@@ -41,8 +41,8 @@
     End Sub
 
     Public Sub RetornaMarcacoes(ByVal IdLog As Integer)
-        Dim VstrSQL As String = "SELECT A.ID_HORAS, B.USUARIO_LOG AS NOME, A.DATA, A.ENTRADA, A.INICIO_ALMOCO, A.FIM_ALMOCO, A.SAIDA, A.MODO 
-                                 FROM TB_HORAS A INNER JOIN TB_LOGIN B ON A.ID_LOG = B.ID_LOG WHERE A.ID_LOG = " & IdLog
+            Dim VstrSQL As String = "SELECT A.ID_HORAS, B.USUARIO_LOG AS NOME, A.DATA, A.ENTRADA, A.INICIO_ALMOCO, A.FIM_ALMOCO, A.SAIDA, A.MODO 
+                                     FROM TB_HORAS A INNER JOIN TB_LOGIN B ON A.ID_LOG = B.ID_LOG WHERE A.ID_LOG = " & IdLog
 
         Me.Exito = False
         Me.LId_Horas = New List(Of Integer)

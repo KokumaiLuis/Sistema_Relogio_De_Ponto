@@ -93,11 +93,12 @@ Partial Class frmRelogioPonto
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.GridHorario.DefaultCellStyle = DataGridViewCellStyle2
         Me.GridHorario.EnableHeadersVisualStyles = False
-        Me.GridHorario.Location = New System.Drawing.Point(30, 529)
+        Me.GridHorario.Location = New System.Drawing.Point(24, 423)
+        Me.GridHorario.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GridHorario.Name = "GridHorario"
         Me.GridHorario.RowHeadersWidth = 62
         Me.GridHorario.RowTemplate.Height = 33
-        Me.GridHorario.Size = New System.Drawing.Size(1172, 277)
+        Me.GridHorario.Size = New System.Drawing.Size(938, 222)
         Me.GridHorario.TabIndex = 0
         '
         'IdLog
@@ -162,9 +163,10 @@ Partial Class frmRelogioPonto
         Me.lblHora.AutoSize = True
         Me.lblHora.Font = New System.Drawing.Font("Comic Sans MS", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.lblHora.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(85, Byte), Integer), CType(CType(151, Byte), Integer))
-        Me.lblHora.Location = New System.Drawing.Point(555, 147)
+        Me.lblHora.Location = New System.Drawing.Point(444, 118)
+        Me.lblHora.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblHora.Name = "lblHora"
-        Me.lblHora.Size = New System.Drawing.Size(135, 39)
+        Me.lblHora.Size = New System.Drawing.Size(119, 33)
         Me.lblHora.TabIndex = 4
         Me.lblHora.Text = "00:00:00"
         '
@@ -173,18 +175,20 @@ Partial Class frmRelogioPonto
         Me.lblData.AutoSize = True
         Me.lblData.Font = New System.Drawing.Font("Comic Sans MS", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.lblData.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(85, Byte), Integer), CType(CType(151, Byte), Integer))
-        Me.lblData.Location = New System.Drawing.Point(532, 105)
+        Me.lblData.Location = New System.Drawing.Point(426, 84)
+        Me.lblData.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblData.Name = "lblData"
-        Me.lblData.Size = New System.Drawing.Size(181, 39)
+        Me.lblData.Size = New System.Drawing.Size(159, 33)
         Me.lblData.TabIndex = 4
         Me.lblData.Text = "00/00/0000"
         '
         'btnLogout
         '
         Me.btnLogout.Image = CType(resources.GetObject("btnLogout.Image"), System.Drawing.Image)
-        Me.btnLogout.Location = New System.Drawing.Point(1173, 12)
+        Me.btnLogout.Location = New System.Drawing.Point(938, 10)
+        Me.btnLogout.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnLogout.Name = "btnLogout"
-        Me.btnLogout.Size = New System.Drawing.Size(50, 52)
+        Me.btnLogout.Size = New System.Drawing.Size(40, 42)
         Me.btnLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.btnLogout.TabIndex = 6
         Me.btnLogout.TabStop = False
@@ -197,9 +201,10 @@ Partial Class frmRelogioPonto
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(402, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(322, 10)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(431, 81)
+        Me.PictureBox1.Size = New System.Drawing.Size(345, 65)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 8
         Me.PictureBox1.TabStop = False
@@ -207,9 +212,10 @@ Partial Class frmRelogioPonto
         'ImgHomeOffice
         '
         Me.ImgHomeOffice.Image = CType(resources.GetObject("ImgHomeOffice.Image"), System.Drawing.Image)
-        Me.ImgHomeOffice.Location = New System.Drawing.Point(545, 207)
+        Me.ImgHomeOffice.Location = New System.Drawing.Point(436, 166)
+        Me.ImgHomeOffice.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ImgHomeOffice.Name = "ImgHomeOffice"
-        Me.ImgHomeOffice.Size = New System.Drawing.Size(156, 88)
+        Me.ImgHomeOffice.Size = New System.Drawing.Size(125, 70)
         Me.ImgHomeOffice.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.ImgHomeOffice.TabIndex = 9
         Me.ImgHomeOffice.TabStop = False
@@ -217,9 +223,10 @@ Partial Class frmRelogioPonto
         'ImgPresencial
         '
         Me.ImgPresencial.Image = CType(resources.GetObject("ImgPresencial.Image"), System.Drawing.Image)
-        Me.ImgPresencial.Location = New System.Drawing.Point(545, 207)
+        Me.ImgPresencial.Location = New System.Drawing.Point(436, 166)
+        Me.ImgPresencial.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ImgPresencial.Name = "ImgPresencial"
-        Me.ImgPresencial.Size = New System.Drawing.Size(156, 88)
+        Me.ImgPresencial.Size = New System.Drawing.Size(125, 70)
         Me.ImgPresencial.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.ImgPresencial.TabIndex = 10
         Me.ImgPresencial.TabStop = False
@@ -229,9 +236,10 @@ Partial Class frmRelogioPonto
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Comic Sans MS", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(85, Byte), Integer), CType(CType(151, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(458, 234)
+        Me.Label1.Location = New System.Drawing.Point(366, 187)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(115, 30)
+        Me.Label1.Size = New System.Drawing.Size(99, 26)
         Me.Label1.TabIndex = 11
         Me.Label1.Text = "Presencial"
         '
@@ -240,18 +248,20 @@ Partial Class frmRelogioPonto
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Comic Sans MS", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(85, Byte), Integer), CType(CType(151, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(674, 234)
+        Me.Label2.Location = New System.Drawing.Point(539, 187)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(147, 30)
+        Me.Label2.Size = New System.Drawing.Size(127, 26)
         Me.Label2.TabIndex = 12
         Me.Label2.Text = "Home Office"
         '
         'ImgIniAlm
         '
         Me.ImgIniAlm.Image = CType(resources.GetObject("ImgIniAlm.Image"), System.Drawing.Image)
-        Me.ImgIniAlm.Location = New System.Drawing.Point(346, 310)
+        Me.ImgIniAlm.Location = New System.Drawing.Point(277, 248)
+        Me.ImgIniAlm.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ImgIniAlm.Name = "ImgIniAlm"
-        Me.ImgIniAlm.Size = New System.Drawing.Size(227, 198)
+        Me.ImgIniAlm.Size = New System.Drawing.Size(182, 158)
         Me.ImgIniAlm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.ImgIniAlm.TabIndex = 14
         Me.ImgIniAlm.TabStop = False
@@ -259,9 +269,10 @@ Partial Class frmRelogioPonto
         'ImgFimAlm
         '
         Me.ImgFimAlm.Image = CType(resources.GetObject("ImgFimAlm.Image"), System.Drawing.Image)
-        Me.ImgFimAlm.Location = New System.Drawing.Point(674, 310)
+        Me.ImgFimAlm.Location = New System.Drawing.Point(539, 248)
+        Me.ImgFimAlm.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ImgFimAlm.Name = "ImgFimAlm"
-        Me.ImgFimAlm.Size = New System.Drawing.Size(227, 198)
+        Me.ImgFimAlm.Size = New System.Drawing.Size(182, 158)
         Me.ImgFimAlm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.ImgFimAlm.TabIndex = 15
         Me.ImgFimAlm.TabStop = False
@@ -269,9 +280,10 @@ Partial Class frmRelogioPonto
         'ImgSaida
         '
         Me.ImgSaida.Image = CType(resources.GetObject("ImgSaida.Image"), System.Drawing.Image)
-        Me.ImgSaida.Location = New System.Drawing.Point(975, 310)
+        Me.ImgSaida.Location = New System.Drawing.Point(780, 248)
+        Me.ImgSaida.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ImgSaida.Name = "ImgSaida"
-        Me.ImgSaida.Size = New System.Drawing.Size(227, 198)
+        Me.ImgSaida.Size = New System.Drawing.Size(182, 158)
         Me.ImgSaida.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.ImgSaida.TabIndex = 16
         Me.ImgSaida.TabStop = False
@@ -279,9 +291,10 @@ Partial Class frmRelogioPonto
         'ImgEntrada
         '
         Me.ImgEntrada.Image = CType(resources.GetObject("ImgEntrada.Image"), System.Drawing.Image)
-        Me.ImgEntrada.Location = New System.Drawing.Point(30, 310)
+        Me.ImgEntrada.Location = New System.Drawing.Point(24, 248)
+        Me.ImgEntrada.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ImgEntrada.Name = "ImgEntrada"
-        Me.ImgEntrada.Size = New System.Drawing.Size(227, 198)
+        Me.ImgEntrada.Size = New System.Drawing.Size(182, 158)
         Me.ImgEntrada.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.ImgEntrada.TabIndex = 18
         Me.ImgEntrada.TabStop = False
@@ -290,9 +303,10 @@ Partial Class frmRelogioPonto
         '
         Me.ImgEntradaHover.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ImgEntradaHover.Image = CType(resources.GetObject("ImgEntradaHover.Image"), System.Drawing.Image)
-        Me.ImgEntradaHover.Location = New System.Drawing.Point(30, 310)
+        Me.ImgEntradaHover.Location = New System.Drawing.Point(24, 248)
+        Me.ImgEntradaHover.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ImgEntradaHover.Name = "ImgEntradaHover"
-        Me.ImgEntradaHover.Size = New System.Drawing.Size(227, 198)
+        Me.ImgEntradaHover.Size = New System.Drawing.Size(182, 158)
         Me.ImgEntradaHover.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.ImgEntradaHover.TabIndex = 19
         Me.ImgEntradaHover.TabStop = False
@@ -301,9 +315,10 @@ Partial Class frmRelogioPonto
         'ImgIniAlmHover
         '
         Me.ImgIniAlmHover.Image = CType(resources.GetObject("ImgIniAlmHover.Image"), System.Drawing.Image)
-        Me.ImgIniAlmHover.Location = New System.Drawing.Point(346, 310)
+        Me.ImgIniAlmHover.Location = New System.Drawing.Point(277, 248)
+        Me.ImgIniAlmHover.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ImgIniAlmHover.Name = "ImgIniAlmHover"
-        Me.ImgIniAlmHover.Size = New System.Drawing.Size(227, 198)
+        Me.ImgIniAlmHover.Size = New System.Drawing.Size(182, 158)
         Me.ImgIniAlmHover.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.ImgIniAlmHover.TabIndex = 20
         Me.ImgIniAlmHover.TabStop = False
@@ -312,9 +327,10 @@ Partial Class frmRelogioPonto
         'ImgFimAlmHover
         '
         Me.ImgFimAlmHover.Image = CType(resources.GetObject("ImgFimAlmHover.Image"), System.Drawing.Image)
-        Me.ImgFimAlmHover.Location = New System.Drawing.Point(674, 310)
+        Me.ImgFimAlmHover.Location = New System.Drawing.Point(539, 248)
+        Me.ImgFimAlmHover.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ImgFimAlmHover.Name = "ImgFimAlmHover"
-        Me.ImgFimAlmHover.Size = New System.Drawing.Size(227, 198)
+        Me.ImgFimAlmHover.Size = New System.Drawing.Size(182, 158)
         Me.ImgFimAlmHover.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.ImgFimAlmHover.TabIndex = 21
         Me.ImgFimAlmHover.TabStop = False
@@ -323,9 +339,10 @@ Partial Class frmRelogioPonto
         'ImgSaidaHover
         '
         Me.ImgSaidaHover.Image = CType(resources.GetObject("ImgSaidaHover.Image"), System.Drawing.Image)
-        Me.ImgSaidaHover.Location = New System.Drawing.Point(975, 310)
+        Me.ImgSaidaHover.Location = New System.Drawing.Point(780, 248)
+        Me.ImgSaidaHover.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ImgSaidaHover.Name = "ImgSaidaHover"
-        Me.ImgSaidaHover.Size = New System.Drawing.Size(227, 198)
+        Me.ImgSaidaHover.Size = New System.Drawing.Size(182, 158)
         Me.ImgSaidaHover.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.ImgSaidaHover.TabIndex = 22
         Me.ImgSaidaHover.TabStop = False
@@ -333,11 +350,11 @@ Partial Class frmRelogioPonto
         '
         'frmRelogioPonto
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.ClientSize = New System.Drawing.Size(1235, 871)
+        Me.ClientSize = New System.Drawing.Size(988, 697)
         Me.Controls.Add(Me.ImgSaidaHover)
         Me.Controls.Add(Me.ImgFimAlmHover)
         Me.Controls.Add(Me.ImgIniAlmHover)
@@ -355,7 +372,10 @@ Partial Class frmRelogioPonto
         Me.Controls.Add(Me.lblData)
         Me.Controls.Add(Me.lblHora)
         Me.Controls.Add(Me.GridHorario)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.MaximizeBox = False
         Me.Name = "frmRelogioPonto"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "frmRelogioPonto"
         CType(Me.GridHorario, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnLogout, System.ComponentModel.ISupportInitialize).EndInit()

@@ -23,9 +23,9 @@
         If ValidaCampos() Then
             log.SelectLista(txtUsuario.Text)
             'Verifica a existência do usuário
-            If log.Lusuario.Count > 0 Then
+            If log.Usuario <> "" Then
                 'Verifica a veracidade da senha
-                If log.Lsenha(0) = txtSenha.Text Then
+                If log.Senha = txtSenha.Text Then
                     frmRelogioPonto.Show()
                     LimpaCampos()
                     Me.Hide()
