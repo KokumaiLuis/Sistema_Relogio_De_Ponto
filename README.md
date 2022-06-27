@@ -1,6 +1,6 @@
 # Digital Clocking System
 This is a digital clocking system for Windows. All user credentials and hour informations are encrypted and secure saved in a SQL Server Database.
-See [Digital Clocking Video](https://encurtador.com.br/cdrJN)
+See [Digital Clocking Video](https://www.linkedin.com/posts/luiskokumai_github-sql-activity-6947290828704727040-RmVL?utm_source=linkedin_share&utm_medium=member_desktop_web)
 
 ## Application Images
 
