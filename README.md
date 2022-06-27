@@ -21,6 +21,7 @@ See [Digital Clocking Video](https://encurtador.com.br/cdrJN)
 
 - VB.NET
 - MVC Architecture
+- T-SQL
 - Microsoft SQL Server
 
 </br>
