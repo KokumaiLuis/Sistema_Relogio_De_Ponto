@@ -97,6 +97,15 @@ Sistema_Relogio_De_Ponto\Relogio_Ponto\Relogio_Ponto\bin\Debug\net5.0-windows
 5. Run the .exe file
 </br>
 
+## 🛠️ Developed With
+```
+Microsoft Visual Studio Community 2022
+Versão 17.2.5
+VisualStudio.17.Release/17.2.5+32616.157
+Microsoft .NET Framework
+Versão 4.8.04161
+```
+
 ## 📝 License
 This project is under license. See the file [LICENÇA](LICENSE) for more details.
 
