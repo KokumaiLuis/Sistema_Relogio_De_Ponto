@@ -225,22 +225,26 @@
     Private Function VerificaHorarioIniAlm() As Boolean
         Dim Data As String = lblData.Text
 
-        With GridHorario.Rows(GridHorario.Rows.Count - 1)
-            If .Cells(2).Value = Data And .Cells(4).Value <> "00:00:00" Then
-                Return True
-            End If
-        End With
+        If GridHorario.Rows.Count > 0 Then
+            With GridHorario.Rows(GridHorario.Rows.Count - 1)
+                If .Cells(2).Value = Data And .Cells(4).Value <> "00:00:00" Then
+                    Return True
+                End If
+            End With
+        End If
         Return False
     End Function
 
     Private Function VerificaHorarioFimAlm() As Boolean
         Dim Data As String = lblData.Text
 
-        With GridHorario.Rows(GridHorario.Rows.Count - 1)
-            If .Cells(2).Value = Data And .Cells(5).Value <> "00:00:00" Then
-                Return True
-            End If
-        End With
+        If GridHorario.Rows.Count > 0 Then
+            With GridHorario.Rows(GridHorario.Rows.Count - 1)
+                If .Cells(2).Value = Data And .Cells(5).Value <> "00:00:00" Then
+                    Return True
+                End If
+            End With
+        End If
         Return False
     End Function
 
